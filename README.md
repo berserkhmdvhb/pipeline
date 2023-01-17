@@ -1,7 +1,9 @@
 # Pipeline
+
 This repository is for testing the pipeline created in the [`aiinsurance`](https://github.com/berserkhmdvhb/aiinsurance) package.
 
 
+# Usage
 Please run the commands mentioned in this README file in a console of an R editor (e.g., Rstudio).
 To run the pipeline, adhere to the instructions provided below:
 
@@ -26,23 +28,6 @@ library(targets)
 tar_make()
 ```
 
-After the pipeline is successfully run, there should be now two plots called `plot_glm` and `plot_rf`. Both of the plots display ROC curve, while the former attributes to the logistic regression (implemented by the glmnet), and the latter attributes to random forest classifier. The two plots are very similar, as the models had very similar performance. Two view the two plots, run the following in the console:
-
-```r
-targets::tar_read(plot_glm)
-targets::tar_read(plot_rf)
-```
-
-
-### Directory Tree 
-
-```bash
-├── R
-│   ├── functions.R
-├── run.R
-├── run.sh
-├── _targets.R
-```
 
 
 After the pipeline is successfully run, there should be now two plots called `plot_glm` and `plot_rf` (as can bee seen in the figure in [Visualize](#Visualize)). Both of the plots display ROC curve, while the former attributes to the logistic regression (implemented by the glmnet), and the latter attributes to random forest classifier. The two plots are very similar, as the models had very similar performance. Two view the two plots, run the following in the console:
@@ -53,7 +38,7 @@ targets::tar_read(plot_rf)
 ```
 
 
-### Directory Tree 
+# Directory Tree 
 
 ```bash
 ├── R
@@ -63,7 +48,7 @@ targets::tar_read(plot_rf)
 ├── _targets.R
 ```
 
-### Visualize 
+# Visualize 
 
 To visalize the components of the pipeline, run the following:
 
@@ -76,7 +61,7 @@ The following figure should be displayed:
 ![`tar_visnetwork`](https://github.com/berserkhmdvhb/aiinsurance/blob/main/inst/figures/tar_visnetwork.png)
 
 
-### Pipeline Steps
+# Pipeline Steps
 
 Evidenced by the visualization, the two datasets used in the pipeline are `insurance_train` and `insurance_test`.
 They are datasets processed from the raw `car_insurance_data`, and all the three mentioned datasets are incorporated in the package.

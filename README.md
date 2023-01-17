@@ -13,7 +13,8 @@ First clone the package's repository, using the following command in a command l
 git clone git@github.com:berserkhmdvhb/pipeline.git
 ```
 
-As requirement, please either use renv when creating a project, or if you haven't, install the [`renv`](https://rstudio.github.io/renv/articles/renv.html) library, load it, and then use the [`renv.lock`](https://github.com/berserkhmdvhb/aiinsurance/blob/main/renv.lock) file (by copying it to project's directory) to install the requied packages. Please follow the following commands in the console:
+Then navigate to to the cloned folder and open `pipeline.Rproj` in an R editor to create a project.
+Install the packages required for the `aiinsurance` package from the `renv.lock` file. Please either use renv when creating a project, or if you haven't, install the [`renv`](https://rstudio.github.io/renv/articles/renv.html) library, load it, and then use the [`renv.lock`](https://github.com/berserkhmdvhb/aiinsurance/blob/main/renv.lock) file (by copying it to project's directory) to install the requied packages. Please run the following commands in the console:
 
 ```r
 install.packages("renv")
@@ -21,7 +22,7 @@ library(renv)
 renv::restore()
 ```
 
-To run the pipeline, simply run the following commands in the console
+To run the pipeline, install and load the `targets` library, and the run `tar_make()` to run the pipeline. Please run the following commands in the console
 
 ```r
 library(targets)

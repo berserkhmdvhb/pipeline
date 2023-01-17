@@ -14,7 +14,7 @@ git clone git@github.com:berserkhmdvhb/pipeline.git
 ```
 
 Then navigate to to the cloned folder and open `pipeline.Rproj` in an R editor to create a project.
-Install the packages required for the `aiinsurance` package from the `renv.lock` file. Please either use renv when creating a project, or if you haven't, install the [`renv`](https://rstudio.github.io/renv/articles/renv.html) library, load it, and then use the [`renv.lock`](https://github.com/berserkhmdvhb/aiinsurance/blob/main/renv.lock) file (by copying it to project's directory) to install the requied packages. Please run the following commands in the console:
+To install the rquired packages, please either use renv when creating a project, or if you haven't, install the [`renv`](https://rstudio.github.io/renv/articles/renv.html) library, load it, and then use the [`renv.lock`](https://github.com/berserkhmdvhb/aiinsurance/blob/main/renv.lock) file (by copying it to project's directory) to install the requied packages. Please run the following commands in the console:
 
 ```r
 install.packages("renv")
